@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(green,yellow,red);
+    position: relative;
+    color:#fff;
+    z-index: -1;
+   
+}
+.container{
+    width: 800Px;
+    height: 180px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+}
+.clock{
+    width:100%;
+    height: 100%;
+    background:black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+.container::before{
+content: "";
+width:180px;
+height:180px;
+background:#da0b0b ;
+border-radius: 5px;
+position: absolute;
+left: -50px;
+top:-50Px;
+z-index: -1;
+}
+.container::after{
+    content: "";
+    width:180px;
+    height:180px;
+    background:#090991ee ;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom:-50Px;
+    z-index: -1;
+    }
+.hero::before{
+    content: "Digital Clock App";
+    width:200px;
+    height:200px;
+    z-index: -1;
+    position: absolute;
+    left:-50px;
+    top:-50px;
+    background-color: rgb(231, 188, 188);
+    border-radius: 50%;
+
+}
+.hero::after{
+    content: "Digital Clock App";
+    width:200px;
+    height:200px;
+    z-index: -1;
+    position: absolute;
+    font-size: 20px;
+    right:-50px;
+    bottom:-50px;
+    color:black;
+    background-color: rgb(11, 219, 219);
+    border-radius: 50%;
+
+}
+.hero::before{
+    content: "Digital Clock App";
+    width:200px;
+    height:200px;
+    z-index: -1;
+    position: absolute;
+    left:-50px;
+    bottom:-50px;
+    background-color: rgb(230, 8, 145);
+    border-radius: 50%;
+    font-weight: 700;
+
+}
+
+.clock span{
+    font-size: 80px;
+    width:110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+}
+.clock span:after{
+    content:"";
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left:50%;
+    transform: translate(-50%);
+}
+#hrs::after{
+    content:'hrs'
+}
+#min::after{
+    content:'min'
+}
+#sec::after{
+    content:'sec'
+}
+#micro::after{
+content: 'micro';
+}
+#header-info{
+    text-align: center;
+    font-size: 50px;
+    color:blue;
+    width:500px;
+    height:100px;
+    border-radius: 5px;
+    padding:15px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.nav-list {
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin: 20px;
+    padding-top: 30px;
+}
+.nav-list a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+.nav-list :hover{
+
+    background-color: blue;
+    cursor:pointer;
+}
+.footer h1{
+   background-color: black;
+   width:100%;
+   height:60px;
+   color:white;
+   text-align: center;
+   padding: 40px;
+
+}
